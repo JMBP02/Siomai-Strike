@@ -1,0 +1,495 @@
+
+/* Front Page */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1000;
+  }
+  
+  .logo-small {
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  
+  /* Front Page Styling */
+  .front-Page {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 300px;
+  }
+  
+  .front-Message {
+    color: white;
+    font-size: 75px;
+  }
+  
+  .front-Button {
+    font-family: "Fira Sans", Arial, sans-serif;
+    padding: 10px 40px;
+    font-size: 35px;
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto; /* Centers the button */
+  }
+  
+  .front-Button:hover {
+    background-color: #c01212;
+  }
+  
+  .front-Button:active {
+    background-color: #7a0c0c;
+  }
+  
+  /* Footer */
+  .footer-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .footer {
+    height: 70px;
+    background-color: #9c1616;
+  }
+  
+  /* Responsive Media Queries */
+  
+  /* Large screens */
+  @media (min-width: 1300px) {
+    .front-Message {
+      font-size: 75px;
+    }
+  
+    .front-Button {
+      font-size: 35px;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 1000px) and (max-width: 1299px) {
+    .front-Message {
+      font-size: 60px;
+    }
+  
+    .front-Button {
+      font-size: 30px;
+    }
+  }
+  
+  /* Small screens */
+  @media (min-width: 768px) and (max-width: 999px) {
+    .front-Message {
+      font-size: 50px;
+    }
+  
+    .front-Button {
+      font-size: 28px;
+      padding: 8px 30px;
+    }
+  
+    .logo-small {
+      height: 120px;
+    }
+  }
+  
+  /* Very small screens (mobile view) */
+  @media (max-width: 767px) {
+    .front-Page {
+      margin-top: 200px;
+    }
+  
+    .front-Message {
+      font-size: 40px;
+    }
+  
+    .front-Button {
+      font-size: 25px;
+      padding: 6px 20px;
+    }
+  
+    .logo-small {
+      height: 100px;
+    }
+  }
+
+/* About Page */
+
+/* Back Button Styling */
+.About-back-button {
+  font-family: "Fira Sans", Arial, sans-serif;
+  padding: 8px 30px;
+  font-size: 25px;
+  background-color: #ff3131;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.About-back-button:hover {
+  background-color: #c01212;
+}
+
+.About-back-button:active {
+  background-color: #7a0c0c;
+}
+
+/* About Message Styling */
+.about-message {
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: white;
+  font-size: 38px;
+  text-align: justify;
+  margin: 50px;
+}
+
+/* Footer */
+.footer-about {
+  height: 70px;
+  background-color: #9c1616;
+}
+
+/* Responsive Layouts */
+
+/* Large Screens (1300px and above) */
+@media (min-width: 1300px) {
+  .about-message {
+    font-size: 38px;
+    margin: 50px;
+  }
+}
+
+/* Medium Screens (1000px - 1299px) */
+@media (min-width: 1000px) and (max-width: 1299px) {
+  .about-message {
+    font-size: 32px;
+    margin: 40px;
+  }
+}
+
+/* Small Screens (768px - 999px) */
+@media (min-width: 768px) and (max-width: 999px) {
+  .about-message {
+    font-size: 28px;
+    margin: 30px;
+  }
+
+  .About-back-button {
+    font-size: 22px;
+  }
+
+  body {
+    background-position: center 250px;
+  }
+}
+
+/* Very Small Screens (below 767px) */
+@media (max-width: 767px) {
+  .about-message {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  .About-back-button {
+    font-size: 20px;
+  }
+
+  body {
+    background-position: center 200px;
+    background-size: 300px;
+  }
+}
+
+.about-message-container{
+  position: fixed;
+  left: 15%;
+  right: 15%;
+}
+
+.footer-container-about{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* Product Page */
+
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #9c1616;
+    padding: 0 20px;
+    z-index: 1000; /* Ensures the header stays on top */
+  }
+  
+  .logo-header {
+    height: 70px;
+    margin-top: 5px;
+  }
+  
+  .header-buttons-contact,
+  .header-buttons-about {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff3131;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .header-buttons-contact:hover,
+  .header-buttons-about:hover {
+    background-color: #c01212;
+  }
+  
+  .header-buttons-contact:active,
+  .header-buttons-about:active {
+    background-color: #9c1616;
+  }
+  
+  /* Grid Product Container */
+  .grid-product-container {
+    margin-top: 120px; /* Adds space for the fixed header */
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  /* Product Container */
+  .product-container {
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 275px;
+    max-width: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  .product-image1 {
+    width: 100%;
+    height: 275px;
+    max-width: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  }
+  
+  .product-name {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .product-price {
+    font-size: 17px;
+    color: rgb(230, 230, 230);
+  }
+  
+  /* Media Queries */
+  
+  /* Large screens (4 columns) */
+  @media (min-width: 1300px) {
+    .grid-product-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Medium screens (3 columns) */
+  @media (min-width: 1000px) and (max-width: 1299px) {
+    .grid-product-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Small screens (3 columns) */
+  @media (min-width: 768px) and (max-width: 999px) {
+    .grid-product-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Very small screens (1 column) */
+  @media (max-width: 767px) {
+    .grid-product-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .header-buttons-contact,
+    .header-buttons-about {
+      font-size: 16px;
+      padding: 6px 10px;
+      width: 100%; /* Full width for better usability */
+    }
+  
+    .logo-header {
+      height: 40px;
+    }
+  }
+
+/* Contact Page */
+
+/* Back Button Styling */
+.Contact-back-button {
+  font-family: "Fira Sans", Arial, sans-serif;
+  padding: 8px 30px;
+  font-size: 25px;
+  background-color: #ff3131;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.Contact-back-button:hover {
+  background-color: #c01212;
+}
+
+.Contact-back-button:active {
+  background-color: #7a0c0c;
+}
+
+/* Contact Message Styling */
+.contact-Message {
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+/* Facebook Page Image Styling */
+.fbpage-picture {
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+/* Link Styling */
+.link-design {
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: white;
+}
+
+.link-design:hover {
+  color: black;
+}
+
+/* Contact Container */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer-about {
+  height: 70px;
+  background-color: #9c1616;
+}
+
+/* Responsive Layouts */
+
+/* Large Screens (1300px and above) */
+@media (min-width: 1300px) {
+  .contact-Message {
+    font-size: 35px;
+  }
+
+  .contact-container {
+    width: 50%;
+  }
+}
+
+/* Medium Screens (1000px - 1299px) */
+@media (min-width: 1000px) and (max-width: 1299px) {
+  .contact-Message {
+    font-size: 30px;
+  }
+
+  .contact-container {
+    width: 60%;
+  }
+}
+
+/* Small Screens (768px - 999px) */
+@media (min-width: 768px) and (max-width: 999px) {
+  .contact-Message {
+    font-size: 28px;
+  }
+
+  .contact-container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .fbpage-picture {
+    margin: 0 auto;
+  }
+
+  .Contact-back-button {
+    font-size: 22px;
+  }
+}
+
+/* Very Small Screens (below 767px) */
+@media (max-width: 767px) {
+  .contact-Message {
+    font-size: 24px;
+  }
+
+  .contact-container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .fbpage-picture {
+    margin: 0 auto;
+  }
+
+  .Contact-back-button {
+    font-size: 20px;
+  }
+
+  body {
+    background-position: center 200px;
+    background-size: 280px;
+  }
+}
